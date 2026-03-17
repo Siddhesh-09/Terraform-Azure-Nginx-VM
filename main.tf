@@ -78,7 +78,7 @@ resource "azurerm_public_ip" "mypublicip" {
 resource "azurerm_network_interface" "nic-terraform" {
   name                = "nic-terraform"
   location            = azurerm_resource_group.rg-terraform.location
-  resource_group_name = azurerm_resource_group.rg-terraform.name
+  resource_group_name = azurerm_resource_group.rg-terraform.name 
   
   ip_configuration {
     name                          = "ipconfig1"
